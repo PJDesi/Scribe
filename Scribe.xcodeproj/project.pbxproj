@@ -54,14 +54,38 @@
 		11CD7F821F1AAA9500EDA4F1 /* Scribe */ = {
 			isa = PBXGroup;
 			children = (
+				11CD7F951F1AB01800EDA4F1 /* Model */,
+				11CD7F971F1AB02D00EDA4F1 /* View */,
+				11CD7F961F1AB02200EDA4F1 /* Controller */,
 				11CD7F831F1AAA9500EDA4F1 /* AppDelegate.swift */,
-				11CD7F851F1AAA9500EDA4F1 /* ViewController.swift */,
 				11CD7F871F1AAA9500EDA4F1 /* Main.storyboard */,
 				11CD7F8A1F1AAA9500EDA4F1 /* Assets.xcassets */,
 				11CD7F8C1F1AAA9500EDA4F1 /* LaunchScreen.storyboard */,
 				11CD7F8F1F1AAA9500EDA4F1 /* Info.plist */,
 			);
 			path = Scribe;
+			sourceTree = "<group>";
+		};
+		11CD7F951F1AB01800EDA4F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		11CD7F961F1AB02200EDA4F1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11CD7F851F1AAA9500EDA4F1 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		11CD7F971F1AB02D00EDA4F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
