@@ -44,13 +44,18 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJF-bN-dWH">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJF-bN-dWH" customClass="RoundButton" customModule="Scribe" customModuleProvider="target">
                                 <rect key="frame" x="157" y="563" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.85882352941176465" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="U2a-oa-yqB"/>
                                     <constraint firstAttribute="width" constant="60" id="afQ-TZ-luX"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Tap the button below to transcribe the audio embedded in this app." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="12Z-Z4-ryb">
                                 <rect key="frame" x="20" y="75" width="335" height="468"/>
@@ -59,16 +64,25 @@
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="oCt-7a-hFE">
+                                <rect key="frame" x="157.5" y="563" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Guw-4L-CbW"/>
+                                    <constraint firstAttribute="width" constant="60" id="K4Q-iP-Y1s"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="AJF-bN-dWH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Rk-9W-hUK"/>
                             <constraint firstItem="cQb-KA-Ziy" firstAttribute="top" secondItem="AJF-bN-dWH" secondAttribute="bottom" constant="8" id="5N4-pt-rVs"/>
                             <constraint firstItem="pbg-pf-7Vi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7BB-iO-nc6"/>
+                            <constraint firstItem="oCt-7a-hFE" firstAttribute="centerX" secondItem="AJF-bN-dWH" secondAttribute="centerX" id="8qv-Va-0es"/>
                             <constraint firstAttribute="trailing" secondItem="12Z-Z4-ryb" secondAttribute="trailing" constant="20" id="AKb-HQ-ftz"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cQb-KA-Ziy" secondAttribute="bottom" constant="8" id="AOS-Cd-XqG"/>
                             <constraint firstItem="12Z-Z4-ryb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Sqk-vc-U8l"/>
                             <constraint firstItem="AJF-bN-dWH" firstAttribute="top" secondItem="12Z-Z4-ryb" secondAttribute="bottom" constant="20" id="Ys3-Bj-brp"/>
+                            <constraint firstItem="oCt-7a-hFE" firstAttribute="centerY" secondItem="AJF-bN-dWH" secondAttribute="centerY" id="ZuA-Aj-JXk"/>
                             <constraint firstItem="pbg-pf-7Vi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bkV-tM-oKT"/>
                             <constraint firstItem="12Z-Z4-ryb" firstAttribute="top" secondItem="pbg-pf-7Vi" secondAttribute="bottom" constant="20" id="hrj-Xr-Uh2"/>
                             <constraint firstItem="cQb-KA-Ziy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wKT-ut-bo2"/>
